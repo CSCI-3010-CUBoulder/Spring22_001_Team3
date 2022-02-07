@@ -47,7 +47,14 @@ int Sum( std::vector<int> nums ) {
 int Product( std::vector<int> nums );
 
 // Adds an integer n to each element of a given vector
-std::vector<int> VectorPlusN( std::vector<int> v, int n );
+std::vector<int> VectorPlusN( std::vector<int> v, int n ){
+    for (int i=0; i < v.size(); i++){
+        v[i] = v[i] + n;
+    }
+
+    return v;
+
+};
 
 // Multiples an integer n with each element of a given vector
 std::vector<int> VectorTimesN( std::vector<int> v, int n );
