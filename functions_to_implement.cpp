@@ -48,7 +48,7 @@ int Product( std::vector<int> nums );
 
 // Adds an integer n to each element of a given vector
 std::vector<int> VectorPlusN( std::vector<int> v, int n ){
-    for (int i=0; i < v.size(); i++){
+    for (std::size_t i=0; i < v.size(); i++){
         v[i] = v[i] + n;
     }
 
